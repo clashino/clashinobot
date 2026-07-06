@@ -1,11 +1,10 @@
 [
     {
-        "label": "asyncio",
-        "kind": 6,
+        "label": "Router",
+        "importPath": "aiogram",
+        "description": "aiogram",
         "isExtraImport": true,
-        "importPath": "asyncio",
-        "description": "asyncio",
-        "detail": "asyncio",
+        "detail": "aiogram",
         "documentation": {}
     },
     {
@@ -33,11 +32,36 @@
         "documentation": {}
     },
     {
+        "label": "Command",
+        "importPath": "aiogram.filters",
+        "description": "aiogram.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.filters",
+        "documentation": {}
+    },
+    {
         "label": "Message",
         "importPath": "aiogram.types",
         "description": "aiogram.types",
         "isExtraImport": true,
         "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
         "documentation": {}
     },
     {
@@ -63,6 +87,15 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "handlers.start",
+        "description": "handlers.start",
+        "peekOfCode": "router = Router()\n@router.message(Command(\"start\"))\nasync def start_command(message: Message):\n    await message.answer(\n        \"👋 سلام، به ربات Clashino خوش آمدید.\"\n    )",
+        "detail": "handlers.start",
         "documentation": {}
     },
     {
